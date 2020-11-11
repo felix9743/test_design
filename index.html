@@ -6,7 +6,7 @@
 		<meta name="viewport" content="initial-scale=1">
 		<style type="text/css">
 			* { margin: 0px; padding: 0px; font-family: calibri; }
-			body { background-color: #D6D6D6; padding: 0px 30px; }
+			body { background-color: #D6D6D6; padding: 0px 30px 60px; }
 			img { display: block; width: 100%; }
 			main p { background-color: #E2E2E2; padding: 10px; text-align: justify; font-size: 14px; }
 			div { margin: 30px 0px; }
@@ -18,10 +18,11 @@
 				 overflow: hidden; position: absolute;
 			}
 
-			li:hover { text-decoration: underline; }
+			li > a { text-decoration: none; color: black; }
+			li > a:hover { text-decoration: underline; }
 
 			nav { position: fixed;
-				bottom: 10px; right: 10px;
+				bottom: 15px; right: 15px;
 			}
 			pre {
 				background-color: #E2E2E2;
@@ -29,25 +30,25 @@
 				z-index: 10;
 
 				border-radius: 50%;
-				box-shadow: black 0px 0px 80px;
+				box-shadow: black 0px 0px 30px -10px;
 			}
 
 			#menu:checked ~ pre {
-				box-shadow: none;
+				box-shadow: black 0px 0px 20px -10px;
 			}
 
 			#menu:checked ~ ul {
-				background-color: #E2E2E2; padding: 15px 10px 40px; border-radius: 20% 20% 0%; z-index: -1;
-				bottom: 25px; right: 0px; width: 80px; text-align: center; line-height: 25px;
+				background-color: #E2E2E2; padding: 20px 20px 45px; border-radius: 20% 20% 0%; z-index: -1;
+				bottom: 32px; right: 0px; width: 80px; text-align: center; line-height: 28px; font-size: 18px;
 
-				box-shadow: black 0px 0px 80px;
+				box-shadow: black 0px 0px 80px -20px;
 			}
 			nav > input {
-				position: absolute; height: 50px; width: 50px; z-index: 2; opacity: 0; cursor: pointer;
+				position: absolute; height: 60px; width: 60px; z-index: 2; opacity: 0; cursor: pointer;
 			}
 
 			nav pre {
-				line-height: 7px; font-size: 8px; text-align: center; user-select: none;
+				line-height: 10px; font-size: 12px; text-align: center; user-select: none;
 			}
 		</style>
 	</head>
@@ -61,9 +62,9 @@
 </pre>
 
 			<ul>
-				<li>Accueil</li>
-				<li>Portfolio</li>
-				<li>A Propos</li>
+				<li><a href="#home">Accueil</a></li>
+				<li><a href="#Portfolio">Portfolio</a></li>
+				<li><a href="#about">A Propos</a></li>
 			</ul>
 		</nav>
 
@@ -81,7 +82,7 @@
 			</div>
 			<div>
 				<img src="https://via.placeholder.com/1000x300/4FC18A/000">
-				<p>Excepteur magna dolor duis.</p>
+				<p>Excepteur magna dolor duis. Occaecat ut sed.</p>
 			</div>
 		</main>
 	</body>
